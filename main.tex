@@ -28,10 +28,15 @@
 }
 
 % 3 -- observables of ATLAS
-\begin{frame}{What observables does ATLAS have?}
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \setbeamercolor{normal text}{fg=white}
+  \setbeamercolor{frametitle}{fg=white}
+  \usebeamercolor[fg]{normal text}
+  \begin{frame}{What observables does ATLAS have?}
   \centering
   \begin{tikzpicture}[
-      box/.style={draw, rounded corners, minimum width=5.2cm, minimum height=2.2cm,
+      box/.style={draw=white, text=white, rounded corners, minimum width=5.2cm, minimum height=2.2cm,
                   align=center, font=\Large, thick}]
     \node[box] (a) {Position};
     \node[box, right=0.6cm of a] (b) {Timing};
@@ -39,6 +44,7 @@
     \node[box, right=0.6cm of c] (d) {Energy};
   \end{tikzpicture}
 \end{frame}
+}
 
 % 4 -- technical drawing of (part of) the ATLAS detector
 {
