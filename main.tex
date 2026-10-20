@@ -19,10 +19,13 @@
 }
 
 % 2 -- soccer field sketch with audience
-\begin{frame}[plain]
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}[plain]
   \centering
-  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/soccer.jpg}
+  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/stadium.png}
 \end{frame}
+}
 
 % 3 -- observables of ATLAS
 \begin{frame}{What observables does ATLAS have?}
@@ -38,19 +41,25 @@
 \end{frame}
 
 % 4 -- technical drawing of (part of) the ATLAS detector
-\begin{frame}[plain]
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}[plain]
   \centering
-  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/detector.png}
+  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/atlas_layers.jpg}
   \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east, fill=white, fill opacity=0.8, text opacity=1, inner sep=3pt]
-      at (current page.north east) {\footnotesize\href{https://atlas-viewer.web.cern.ch}{atlas-viewer.web.cern.ch}};
+    \node[anchor=north east, fill=black, fill opacity=0.8, text opacity=1, text=white, inner sep=3pt]
+      at (current page.north east) {\footnotesize\href{https://atlas-viewer.web.cern.ch}{\textcolor{white}{atlas-viewer.web.cern.ch}}};
   \end{tikzpicture}
 \end{frame}
+}
 
 % 5 -- reconstructed tracks
-\begin{frame}[plain]
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}[plain]
   \centering
-  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/tracks.png}
+  \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/atlas.png}
 \end{frame}
+}
 
 \end{document}
