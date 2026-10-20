@@ -46,14 +46,21 @@
   \begin{frame}[plain]
   \centering
   \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/atlas_layers.jpg}
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east, fill=black, fill opacity=0.8, text opacity=1, text=white, inner sep=3pt]
-      at (current page.north east) {\footnotesize\href{https://atlas-viewer.web.cern.ch}{\textcolor{white}{atlas-viewer.web.cern.ch}}};
-  \end{tikzpicture}
 \end{frame}
 }
 
-% 5 -- reconstructed tracks
+% 5 -- link to the ATLAS online viewer
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}[plain]
+    \centering
+    \vfill
+    {\fontsize{34}{40}\selectfont\href{https://atlas-viewer.web.cern.ch}{\textcolor{white}{atlas-viewer.web.cern.ch}}\par}
+    \vfill
+  \end{frame}
+}
+
+% 6 -- reconstructed tracks
 {
   \setbeamercolor{background canvas}{bg=black}
   \begin{frame}[plain]
