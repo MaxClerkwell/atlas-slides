@@ -41,6 +41,10 @@
 \begin{frame}[plain]
   \centering
   \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/detector.png}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east, fill=white, fill opacity=0.8, text opacity=1, inner sep=3pt]
+      at (current page.north east) {\footnotesize\href{https://atlas-viewer.web.cern.ch}{atlas-viewer.web.cern.ch}};
+  \end{tikzpicture}
 \end{frame}
 
 % 5 -- reconstructed tracks
